@@ -1,0 +1,29 @@
+{
+  "name": "alexa_wrike",
+  "version": "1.0.0",
+  "description": "Alexa Wrike integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndGasper/alexa_wrike.git"
+  },
+  "keywords": [
+    "alexa",
+    "wrike",
+    "virtual",
+    "assistant"
+  ],
+  "author": "Andres Gasper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndGasper/alexa_wrike/issues"
+  },
+  "homepage": "https://github.com/AndGasper/alexa_wrike#readme",
+  "dependencies": {
+    "dotenv": "^5.0.0",
+    "alexa-sdk": "^1.0.9"
+  }
+}
