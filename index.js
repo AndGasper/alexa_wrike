@@ -15,13 +15,26 @@ function Wrike() {
     this.getAuthorizationCode = function() {
 
 
-    }
+    };
 
     this.getOAuthToken = function() {
         // should take response from getAuthorizationCode for POST request to get OAuthToken
         // Should make use of Network 
 
-    }
+    };
+
+    this.getTasks = function() {
+        // Which tasks?
+        // By date range?
+
+    };
+
+    this.updateTask = function(task, action) {
+        // Toggle status
+        // Toggle time tracking 
+        // Add comment 
+        // "Hey Alexa, tell Wrike to start {task name}" -> toggles status, triggers time tracking 
+    };
 }
 
 function Network() {
@@ -60,7 +73,7 @@ const handlers = {
         this.emit(':tell', "You can say things like, Ask Wrike: what are my tasks for today?");
     },
     'GetTodaysWrikeTasks': function () {
-        httpsGet('todaysTasks', (message) => {
+        wrike.getTasks('todaysTasks', (message) => {
         this.emit(':tell', message);
         });
     },
